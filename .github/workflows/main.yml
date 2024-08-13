@@ -1,0 +1,20 @@
+on:
+ push:
+  branches:
+   - main
+
+jobs:
+ make_module:
+  name: make artifact
+  runs-on: ubuntu-latest
+  steps:
+   - name: Checkout code
+     uses: actions/checkout@v4
+   - name: Make module
+     uses: actions/upload-artifact@v4
+     with:
+      name: NoInternetAtBoot
+      path: |
+       service.sh
+       module.prop
+       META-INF
