@@ -1,0 +1,6 @@
+id=NoInternetAtBoot
+name=No Internet At Boot
+version=1.0
+versionCode=1
+author=MK73DS
+description=Disable wifi and data at boot
